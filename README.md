@@ -11,3 +11,9 @@ Brief Description:
 - Data warehouse is configured using MySQL (dbeaver) and PostgreSQL (PGAdmin).
   - Dimension table: `dim_case`, `dim_district`, `dim_province`
   - Fact table: `district_daily`, `province_daily`
+
+--
+
+Naming conventions
+- fp = final project
+- dim = dimension
