@@ -1,3 +1,5 @@
+# not used
+
 import requests
 import pandas as pd
 import logging
