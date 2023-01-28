@@ -7,13 +7,11 @@ from airflow import DAG
 from airflow.models import Variable, Connection
 from airflow.operators.python import PythonOperator
 
-from modules.covid_scraper import CovidScraper
+# from modules.covid_scraper import CovidScraper
 from modules.transformer import Transformer
 from modules.connector import Connector
 
 def fun_get_data_from_api(**kwargs):
-    #pass
-    #ambil data
     data = requests.get(Variable.get('url_covid_tracker'))
     dataCovid = data.json()['data']['content']
     df = pd.json_normalize(dataCovid)
